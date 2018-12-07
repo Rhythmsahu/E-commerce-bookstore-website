@@ -1,0 +1,470 @@
+/* The Modal (background) */
+*{
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+	        box-sizing:border-box;
+}
+
+#nav {
+  border-bottom-color: red;
+  border-style: solid;
+  height: 52px;
+  background-color: white;
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease .5s;
+}
+
+#mynav a{
+    color: red;  
+}
+#mynav #l1 a:hover{
+    background-color: #ff0000;
+    color:white;
+}
+#mynav #l2 a:hover{
+    background-color: #fff;
+    color:red;
+}
+#mynav a:focus{
+    
+}
+
+
+.close {
+    position: absolute;
+    left: 275px;
+    top: 0;
+    color: #fff;
+    font-size: 135px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: whitesmoke;
+    cursor: pointer;
+}
+.right-box .close{
+    color: #fff;
+}
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+#login-box
+{
+    position: relative;
+    margin: 5% auto;
+    height: 400px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.left-box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding-bottom:  10px;
+    padding-left: 20px;
+    width: 300px;
+    height: 400px;    
+}
+
+h1
+{
+    margin: 0 0 20px 0;
+    font-weight: 300;
+    font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"]
+{
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 250px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;   
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus
+{
+    background: #ff5722;
+    transition: 0.2s ease;
+}
+
+.right-box
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 300px;
+    height: 400px;
+    background-image: url(img/bbg_1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.or
+{
+    position: absolute;
+    top: 180px;
+    left: 280px;
+    width: 40px;
+    height: 40px;
+    background: #efefef;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    line-height: 40px;
+    text-align: center;
+}
+
+.right-box .signinwith
+{
+    display: block;
+    margin-bottom: 120px;
+    font-weight: 300;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+button.social
+{
+    margin-bottom: 20px;
+    width: 220px;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.facebook
+{
+    background: #32508e;
+}
+.loginbox{
+    width: 320px;
+    height: 480px;
+    background: #fff;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"],input[type="tel"]
+{
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #aaa;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginbox a:hover
+{
+    color: #ffc107;
+}
+.banner{
+                /*border: solid black 2px;*/
+                width: 100%;
+                height: 500px;
+            }
+            #im2{
+                display: none;
+            }
+            .books-container{
+                width: 100%;
+                height: 300px;
+                /*border: solid black 2px;*/
+                background-color:lightgoldenrodyellow                
+            }
+            .book{
+                position: relative;
+                float: left;
+                width: 230px;
+                height: 260px;
+                border: dashed 1px gray;
+                margin-top:20px;
+                margin-left: 30px;
+                text-align:center;
+                vertical-align: middle;
+                line-height: 260px;
+            }
+            .bottom{
+                width:100%;
+                height: 300px;
+                color: #fff;
+                /*border:solid black 2px;*/
+                background-size: cover;
+                text-align: center;
+                vertical-align: middle;
+                line-height: 100px; /* Same as the height as of div */
+                padding-top: 80px;
+                padding-right: 500px;
+            }
+      .dropbtn {
+            background-color:red;
+            color: white;
+            width: 120px;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            height: 53px;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            color:white;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 220px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color:red;
+            color:white;
+            }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color:  red;
+        }
+footer{
+      padding: 10px 10px;
+      background-color: #000;
+      color:#9d9d9d;
+      bottom: 0;
+      width: 100%; 
+}
+.jumbotron{
+            background-image: url("head-2.jpg");
+            height:450px;
+        }
+
+        #head-text{
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 280%;
+            color: cornsilk;
+        }
+
+        #second-text{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 220%;
+            color:cornsilk;
+        }
+
+        .btn{
+            margin-left: 575px;
+            margin-top: 56px;
+        }
+
+        #first_book{
+
+            height:380px;
+            width:inherit;
+            border-radius: 15px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            background-image: url("books-back.jpg");
+        }
+        
+       .image{
+
+            width:400px;
+            height: 250px;
+            float:left;
+            margin-left: 40px;
+            margin-top: 80px;
+            border-radius: 9px;
+        }
+
+        .title{
+            width:650px;
+            height: 100px;
+            float:right;
+            margin-right: 98px;
+            margin-top:80px;
+        }
+
+        .author{
+            width:300px;
+            height:50px;
+            float:right;
+            margin-right:450px;
+            margin-top:30px;
+            border-radius:6px;
+        }
+        .cost{
+            width:180px;
+            height:50px;
+            float:right;
+            margin-right: 97px;
+            margin-top:-49px;
+            border-radius: 6px;
+        }
+
+        .ranking{
+            width:80px;
+            height:50px;
+            float:right;
+            border-style: dashed;
+            border-color: chartreuse;
+            margin-right: 80px;
+            margin-top:-50px;
+            border-radius: 6px;
+        }
+
+        #submission{
+            float:right;
+            width:180px;
+            height:50px;
+            margin-right: 28px;
+            margin-top: 30px;
+            border-radius: 8px;
+            background-color: red;
+            color: #fff;
+        }
+
+        #submission1{
+            float:left;
+            width:180px;
+            height:50px;
+            margin-left: 161px;
+            margin-top: 30px;
+            border-radius: 8px;
+            background-color: red;
+            color: #fff;
+        }
+.bgimg-1, .bgimg-2 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+      /*
+Author: Michiel de Graaf
+Title: Workbench, Shopping cart
+*/
+
